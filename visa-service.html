@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Xizmatlari - Chetga Visa Chiqarish</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/random/1920x1080/?passport');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Services */
+        .services {
+            padding: 5rem 2rem;
+            background: #f9f9f9;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact */
+        .contact {
+            padding: 5rem 2rem;
+            background: #fff;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 1rem;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">VisaXizmat</div>
+            <nav>
+                <a href="#services">Xizmatlar</a>
+                <a href="#contact">Kontaktlar</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chetga Visa Chiqarish</h1>
+            <p>Professional va tez xizmatlar bilan sizning visa muammoningizni hal qilish</p>
+            <a href="#contact" class="cta-button">Biz bilan bog'lanish</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Xizmatlar</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-passport"></i>
+                <h3>Visa Chiqarish</h3>
+                <p>Yevropaning Chexiya, Germaniya,
+                 mamlakatlarga visa chiqarish xizmati</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-plane"></i>
+                <h3>Chetga Ketish</h3>
+                <p>Chetga ketishga yordam berish va rejalashtirish</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Hujjatlar</h3>
+                <p>Zagran pasport, milliy pasport, sug'urtangiz</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-form">
+            <h2>Biz bilan bog'lanish</h2>
+            <form>
+                <input type="text" placeholder="Ismingiz" required>
+                <input type="email" placeholder="Email manzilingiz" required>
+                <input type="tel" placeholder="Telefon raqamingiz" required>
+                <textarea placeholder="Xabar matni" rows="5" required></textarea>
+                <button type="submit">Yuborish</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 VisaXizmat. Barcha huquqlar himoyalangan.</p>
+        <p>Telegram: +1 413 946 1903 <a href="#">@qodirovvvvw</a></p>
+    </footer>
+<script>
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const data = {};
+        
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        // Emailga yuborish uchun API endpoint
+        fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                service_id: 'YOUR_SERVICE_ID', // service_u4ouhd6
+                template_id: 'YOUR_TEMPLATE_ID', // template_v2kbdce
+                user_id: 'YOUR_USER_ID', // KfvTjAuF_98NFnt3r
+                template_params: {
+                    name: data.name,
+                    email: data.email,
+                    phone: data.phone,
+                    message: data.message
+                }
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert('Xabaringiz muvaffaqiyatli yuborildi!');
+            this.reset();
+        })
+        .catch(error => {
+            alert('Xatolik yuz berdi. Iltimos, qayta urinib ko'ring.');
+            console.error('Error:', error);
+        });
+    });
+</script>
+</body>
+</html>
